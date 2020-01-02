@@ -56,6 +56,7 @@
       (- 6 2)
       (- 2 7)))
 
+;; Exc 1.3
 (define (sum-square-two-largest x y z)
   (if (> x y)
       (if (> y z) (sum-of-squares x y) (sum-of-squares x z))
@@ -67,11 +68,13 @@
 (sum-square-two-largest 2 1 3)
 (sum-square-two-largest 2 3 1)
 
+;; Exc 1.4
 (define (a-plus-abs-b a b)
   ((if (> b 0) + -) a b))
 (a-plus-abs-b 4 3)
 (a-plus-abs-b 4 (- 3))
 
+;; Exc 1.5
 (define (p) (p))
 (define (test x y)
   (if (= x 0) 0 y))
